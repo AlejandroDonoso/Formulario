@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        .titulo{
+            color: red;
+            text-align: center;
+        }
+        form{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body style="background-color: rgb(86, 247, 247);">
+    <h1 class="titulo">FORMULARIO</h1>
+    <form>
+        <fieldset>
+            <label for="fname">Nombre:</label><br>
+            <input type="text" id="fname" name="fname" min="3" max="10" placeholder="Escribe su nombre aqui"><br>
+            <label for="lname">Apellidos</label><br>
+            <input type="text" id="lname" name="lname">
+        </fieldset>
+        <br><br>
+            <label for="email">Correo:</label>
+            <input type="email" id="email" name="email" required>
+        <br><br>
+            <label for="pwd">Contraseña:</label>
+            <input type="password" id="pwd" name="pwd" min="8">
+        <br><br>
+            <input type="radio" id="hombre" name="fav_language" value="hombre">
+            <label for="hombre">Masculino</label><br>
+            <input type="radio" id="mujer" name="fav_language" value="mujer">
+            <label for="mujer">Femenino</label><br>
+            <input type="radio" id="Otros" name="fav_language" value="Otros">
+            <label for="Otros">Otros</label><br>
+        <br>
+            <input type="button" onclick="alert('HOLA!')" value="Haz click">
+        <br>
+            <label for="favcolor">Selecciona tu color favorito:</label>
+            <input type="color" id="favcolor" name="favcolor">
+        <br><br>
+            <label for="Fecha">Fecha de nacimiento:</label>
+            <input type="date" id="Fecha" name="Fecha">
+        <br><br>
+            <label for="mes">Mes favorito:</label>
+            <input type="month" id="mes" name="mes">
+        <br><br>
+            <label for="appt">Hora de entrada:</label>
+            <input type="time" id="appt" name="appt">
+        <br><br>
+            <label for="week">Selecciona una semana:</label>
+            <input type="week" id="week" name="week">
+        <br><br>
+            <label for="gsearch">Buscar:</label>
+            <input type="search" id="gsearch" name="gsearch">
+        <br><br>
+            <label for="puntos">Valora esta web:</label>
+            <input type="range" id="puntos" name="puntos" min="0" max="10">
+        <br><br>
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad" min="18" max="65">
+        <br><br>
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" pattern="[0-9]{3}-[0-9]{2}-[0-9]{2}-[0-9]{2}">
+        <br><br>
+            <label for="myfile">Curriculum Vitae:</label>
+            <input type="file" id="myfile" name="myfile">
+        <br><br>
+            <label for="url">Introduzca su webs:</label>
+            <input type="url" id="url" name="url">
+        <br><br>
+            <input type="image" src="2Simulacro\gato.jpg" alt="Submit" width="50" height="50">
+        <br><br>
+        <label for="provincia">Selecciona tu provincia</label>
+        <select name="provincia" id="provincia">
+        <option>Caceres</option>
+        <option>Badajoz</option>
+        <option>Madrid</option>
+        <option>Barcelona</option>
+        <option>Malaga</option>
+        </select>
+        <br><br>
+            <input type="submit" value="Entregar">
+            <input type="reset" value="Reiniciar">
+      </form>
+    
+</body>
+</html>
